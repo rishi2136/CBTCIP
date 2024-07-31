@@ -29,7 +29,7 @@ function DashBoard() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
   return (
     <>
       <h1 className="text-center my-3 fw-bolder" style={{ fontSize: "36px" }}>

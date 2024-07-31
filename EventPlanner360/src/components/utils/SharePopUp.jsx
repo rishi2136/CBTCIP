@@ -8,8 +8,9 @@ const SharePopUp = ({ setIsShare, isShare }) => {
   useEffect(() => {
     setEventId(id);
   }, []);
-  const shareUrl = "https://www.godaddy.com/en-in";
-  const title = "Event Invition Link";
+  const shareUrl =
+    "https://event-planner-frontend-6837.onrender.com/guest/redirect";
+  const title = "Event Invition Link -";
   const description = `Dear Guest,
 
   Its a formal Event Invitation to you,
@@ -31,18 +32,10 @@ const SharePopUp = ({ setIsShare, isShare }) => {
             className="fa-solid fa-xmark popup_close_btn"
             onClick={() => setIsShare(false)}
           ></i>
-          <iconLiabrary.FacebookShareButton
-            url={shareUrl}
-            quote={title}
-            hashtag="#AwesomeWebsite"
-          >
+          <iconLiabrary.FacebookShareButton url={shareUrl} quote={title}>
             <iconLiabrary.FacebookIcon size={56} borderRadius={20} />
           </iconLiabrary.FacebookShareButton>
-          <iconLiabrary.TwitterShareButton
-            url={shareUrl}
-            title={title}
-            hashtags={["AwesomeWebsite", "ReactShare"]}
-          >
+          <iconLiabrary.TwitterShareButton url={shareUrl} title={title}>
             <iconLiabrary.TwitterIcon size={56} borderRadius={20} />
           </iconLiabrary.TwitterShareButton>
           <iconLiabrary.LinkedinShareButton

@@ -44,8 +44,8 @@ const EventView = () => {
     fetchSingleEvent();
   }, [eachEvent]);
 
-  const handleDashboradRedirect = () => {
-    navigate("/dashboard");
+  const handleDashboardRedirect = () => {
+    navigate("/event/dashboard");
   };
 
   //to update vendor list in the backend
@@ -151,7 +151,7 @@ const EventView = () => {
           </button>
           <button
             className="btn btn-outline-dark  col-lg-5 col-10 m-1"
-            onClick={handleDashboradRedirect}
+            onClick={handleDashboardRedirect}
           >
             Back to Home
           </button>
