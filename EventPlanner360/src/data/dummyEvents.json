@@ -1,0 +1,52 @@
+[
+  {
+    "_id":101,
+    "title": "Annual Conference",
+    "dueDate": "2024-09-15",
+    "location": "New York",
+    "vendors": [],
+    "guest": [],
+    "budget": 5000,
+    "createdAt": ["15th Sep 2024", "10:00:00 am"]
+  },
+  {
+    "_id":102,
+    "title": "Product Launch",
+    "dueDate": "2024-08-20",
+    "location": "San Francisco",
+    "vendors": [],
+    "guest": [],
+    "budget": 10000,
+    "createdAt": ["20th Aug 2024", "2:00:00 pm"]
+  },
+  {
+    "_id":103,
+    "title": "Team Building Retreat",
+    "dueDate": "2024-07-10",
+    "location": "Hawaii",
+    "vendors": [],
+    "guest": [],
+    "budget": 8000,
+    "createdAt": ["10th Jul 2024", "9:00:00 am"]
+  },
+  {
+    "_id":104,
+    "title": "Charity Gala",
+    "dueDate": "2024-12-05",
+    "location": "London",
+    "vendors": [],
+    "guest": [],
+    "budget": 12000,
+    "createdAt": ["5th Dec 2024", "7:00:00 pm"]
+  },
+  {
+    "_id":105,
+    "title": "Workshop Series",
+    "dueDate": "2024-10-01",
+    "location": "Berlin",
+    "vendors": [],
+    "guest": [],
+    "budget": 3000,
+    "createdAt": ["1st Oct 2024", "10:30:00 am"]
+  }
+]

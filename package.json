@@ -1,0 +1,16 @@
+{
+  "name": "cbtcip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install server": "cd backend && npm install",
+    "start server": "cd backend && node index.js",
+    "install client": "cd EventPlanner360 && npm install",
+     "build-client": "cd EventPlanner360 && npm run build",
+    "start-client": "cd client && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

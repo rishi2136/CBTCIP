@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "isInvited": true
+  },
+  {
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "isInvited": false
+  },
+  {
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "isInvited": true
+  },
+  {
+    "name": "Diana Prince",
+    "email": "diana.prince@example.com",
+    "isInvited": false
+  },
+  {
+    "name": "Eve Adams",
+    "email": "eve.adams@example.com",
+    "isInvited": true
+  }
+]

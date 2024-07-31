@@ -1,0 +1,25 @@
+/* HomePage.css */
+.hero {
+  background-image: url("../assets/home_page_bg.avif");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.home_main_btn {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home_main_btn:hover {
+  transform: scale(1.1);
+}
