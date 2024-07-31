@@ -19,13 +19,13 @@ const Login = () => {
       );
       if (response.data.message) {
         alert(response.data.message);
-        navigate("/signup");
+        navigate("/event/user/signup");
         return;
       }
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("userId", response.data.userId);
       localStorage.setItem("name", response.data.name);
-      navigate("/dashboard");
+      navigate("/event/dashboard");
     } catch (err) {
       console.error(err);
     }

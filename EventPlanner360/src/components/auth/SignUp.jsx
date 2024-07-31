@@ -26,10 +26,10 @@ const SignUp = () => {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("userId", res.data.userId);
         localStorage.setItem("name", res.data.name);
-        navigate("/dashboard");
+        navigate("/event/dashboard");
       } else {
         alert(res.data.message);
-        navigate("/login");
+        navigate("/event/user/login");
       }
     } catch (err) {
       alert(err.message);

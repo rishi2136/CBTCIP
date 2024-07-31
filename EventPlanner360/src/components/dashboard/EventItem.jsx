@@ -11,7 +11,7 @@ const EventItem = ({ eachEvent }) => {
   const dispatch = useDispatch();
 
   const handleManageClick = () => {
-    navigate(`/view/${eventId}`);
+    navigate(`/event/view/${eventId}`);
   };
 
   const handleDeleteClick = async (eventId) => {
