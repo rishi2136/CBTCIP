@@ -5,7 +5,8 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const Event = require("../models/event");
 const Guest = require("../models/guest");
 
-const YOUR_DOMAIN = 'http://localhost:5173';
+// const YOUR_DOMAIN = 'https://event-planner-frontend-6837.onrender.com';
+const YOUR_DOMAIN = 'http://localhost:3001';
 
 router.post('/create-checkout-session', async (req, res) => {
   const { email: guestEmail, eventId } = req.body;
