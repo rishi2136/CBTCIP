@@ -19,7 +19,7 @@ const CheckoutForm = () => {
 
   const fetchClientSecret = useCallback(async () => {
     let res = await axios.post(
-      "http://localhost:3001/create-checkout-session",
+      "https://event-planner-backend-l06l.onrender.com/create-checkout-session",
       guest
     );
     setResObj(res.data);

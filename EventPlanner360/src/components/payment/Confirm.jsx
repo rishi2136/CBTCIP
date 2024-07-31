@@ -8,7 +8,10 @@ const Confirm = () => {
   const guest = location.state;
 
   const handleClick = async () => {
-    await axios.post("http://localhost:3001/events/guest/confirmed", guest);
+    await axios.post(
+      "https://event-planner-backend-l06l.onrender.com/events/guest/confirmed",
+      guest
+    );
 
     navigate("/congrats", { state: { guestEmail: guest.email } });
   };

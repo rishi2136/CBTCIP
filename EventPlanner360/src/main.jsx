@@ -15,7 +15,7 @@ import App from "./pages/App.jsx";
 import DashBoard from "./pages/DashBoard.jsx";
 import EventView from "./pages/EventView.jsx";
 import Home from "./pages/Home.jsx";
-import store from "./store/combinedSlice.js";
+import store from "./store/index.js";
 
 const router = createBrowserRouter([
   {

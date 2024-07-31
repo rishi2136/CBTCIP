@@ -17,7 +17,9 @@ function DashBoard() {
 
   const fetchData = useCallback(async () => {
     let userId = localStorage.getItem("userId") || undefined;
-    const res = await axios.get(`http://localhost:3001/events/` + userId);
+    const res = await axios.get(
+      `https://event-planner-backend-l06l.onrender.com/events/` + userId
+    );
     dispatch(eventActions.initEvents(res.data));
     if (localStorage.getItem("token") !== null) {
       const currUser = localStorage.getItem("name") || "";

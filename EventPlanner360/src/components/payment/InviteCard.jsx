@@ -19,7 +19,7 @@ const InviteCard = ({ eventId }) => {
     const fetchSingleEvent = async () => {
       try {
         let res = await axios.post(
-          `http://localhost:3001/events/unique/${eventId}`
+          `https://event-planner-backend-l06l.onrender.com/events/unique/${eventId}`
         );
         setCurrEvent(res.data);
       } catch (err) {

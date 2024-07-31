@@ -18,7 +18,7 @@ const EventItem = ({ eachEvent }) => {
     const userId = localStorage.getItem("userId") || undefined;
 
     let res = await axios.delete(
-      `http://localhost:3001/events/${eventId}/user/${userId}`,
+      `https://event-planner-backend-l06l.onrender.com/events/${eventId}/user/${userId}`,
       {
         headers: {
           "Content-Type": "application/json",

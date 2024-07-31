@@ -14,7 +14,9 @@ const PaymentSuccess = () => {
     //retrive the value of the session_id from the query parameter
     const sessionId = urlParams.get("session_id");
 
-    fetch(`http://localhost:3001/session-status?session_id=${sessionId}`)
+    fetch(
+      `https://event-planner-backend-l06l.onrender.com/session-status?session_id=${sessionId}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setStatus(data.status);

@@ -17,7 +17,10 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3001/signup", formData);
+      const res = await axios.post(
+        "https://event-planner-backend-l06l.onrender.com/signup",
+        formData
+      );
       //write some interpreting condition for the other msg
       if (!res.data.message) {
         localStorage.setItem("token", res.data.token);

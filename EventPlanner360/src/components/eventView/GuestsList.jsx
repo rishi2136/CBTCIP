@@ -10,7 +10,7 @@ const GuestsList = ({ myEvent }) => {
   useEffect(() => {
     let guestInit = async () => {
       let res = await axios.get(
-        `http://localhost:3001/events/${myEvent._id}/guests`
+        `https://event-planner-backend-l06l.onrender.com/events/${myEvent._id}/guests`
       );
       setModifiedEvent({ ...res.data });
     };
@@ -19,7 +19,7 @@ const GuestsList = ({ myEvent }) => {
 
   let handleAddAllGuest = async () => {
     let res = await axios.put(
-      `http://localhost:3001/events/${myEvent._id}/guests`,
+      `https://event-planner-backend-l06l.onrender.com/events/${myEvent._id}/guests`,
       {
         guests: addGuestList,
         headers: {

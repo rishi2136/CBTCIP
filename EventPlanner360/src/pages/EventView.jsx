@@ -37,7 +37,7 @@ const EventView = () => {
   useEffect(() => {
     const fetchSingleEvent = async () => {
       let res = await axios.post(
-        `http://localhost:3001/events/unique/${eventId}`
+        `https://event-planner-backend-l06l.onrender.com/events/unique/${eventId}`
       );
       setEachEvent(res.data);
     };
@@ -50,12 +50,15 @@ const EventView = () => {
 
   //to update vendor list in the backend
   let handleAddList = async (Id) => {
-    let res = await axios.put(`http://localhost:3001/events/${Id}`, {
-      vendors: addVendors,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    let res = await axios.put(
+      `https://event-planner-backend-l06l.onrender.com/events/${Id}`,
+      {
+        vendors: addVendors,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const updatedEvent = res.data;
     dispatch(eventActions.addVendorsList({ updatedEvent }));
     setAddVendors([]);

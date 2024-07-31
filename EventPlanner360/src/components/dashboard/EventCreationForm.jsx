@@ -23,12 +23,15 @@ const EventCreationForm = () => {
     let userId = localStorage.getItem("userId") || undefined;
     try {
       //send data to the server to save in the database
-      let res = await axios.post(`http://localhost:3001/events/` + userId, {
-        newEvent,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      let res = await axios.post(
+        `https://event-planner-backend-l06l.onrender.com/events/` + userId,
+        {
+          newEvent,
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       let addedEvent = res.data;
       if (addedEvent.error) {
         alert(addedEvent.error.message);

@@ -30,7 +30,8 @@ const GuestsRedirect = () => {
   let getEvent = useCallback(async (eventId) => {
     try {
       const res = await axios.post(
-        `http://localhost:3001/events/unique/` + eventId
+        `https://event-planner-backend-l06l.onrender.com/events/unique/` +
+          eventId
       );
       const currEvent = res.data;
       if (currEvent._id) {
