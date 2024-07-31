@@ -8,7 +8,8 @@ const SharePopUp = ({ setIsShare, isShare }) => {
   useEffect(() => {
     setEventId(id);
   }, []);
-  const shareUrl = "https://www.godaddy.com/en-in";
+  const shareUrl =
+    "https://event-planner-frontend-6837.onrender.com/guest/redirect";
   const title = "Event Invition Link";
   const description = `Dear Guest,
 
