@@ -45,7 +45,7 @@ const EventView = () => {
   }, [eachEvent]);
 
   const handleDashboardRedirect = () => {
-    navigate("/event/dashboard");
+    navigate("/dashboard");
   };
 
   //to update vendor list in the backend

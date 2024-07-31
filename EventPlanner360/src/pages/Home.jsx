@@ -6,10 +6,10 @@ const Home = () => {
   let handleClick = () => {
     if (!localStorage.getItem("token")) {
       alert("you need to login first");
-      navigate("/event/user/login");
+      navigate("/login");
       return;
     }
-    navigate("/event/dashboard");
+    navigate("/dashboard");
   };
   return (
     <div className="hero">

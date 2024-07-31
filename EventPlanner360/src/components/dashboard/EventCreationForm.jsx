@@ -35,7 +35,7 @@ const EventCreationForm = () => {
       let addedEvent = res.data;
       if (addedEvent.error) {
         alert(addedEvent.error.message);
-        navigate("/event/user/login");
+        navigate("/login");
       }
       dispatch(eventActions.addEvent(addedEvent));
     } catch (err) {

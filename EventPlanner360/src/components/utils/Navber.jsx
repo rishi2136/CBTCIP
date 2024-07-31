@@ -31,17 +31,17 @@ const Navber = () => {
       {!isLogIn && (
         <>
           <li className="nav-item">
-            <Link className="nav-link" to="/event/home">
+            <Link className="nav-link" to="/home">
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/event/user/signup">
+            <Link className="nav-link" to="/signup">
               SignUp
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/event/user/login">
+            <Link className="nav-link" to="/login">
               Login
             </Link>
           </li>
@@ -51,7 +51,7 @@ const Navber = () => {
       {isLogIn && (
         <>
           <li className="nav-item">
-            <Link className="nav-link" to={"/event/dashboard"}>
+            <Link className="nav-link" to={"/dashboard"}>
               Dashboard
             </Link>
           </li>
