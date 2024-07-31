@@ -17,15 +17,15 @@ const Login = () => {
         "https://event-planner-backend-l06l.onrender.com/login",
         formData
       );
-      if (response.data.message) {
-        alert(response.data.message);
-        navigate("/signup");
+      if (!response.data.message) {
+        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("userId", response.data.userId);
+        localStorage.setItem("name", response.data.name);
+        navigate("/dashboard");
         return;
       }
-      localStorage.setItem("token", response.data.token);
-      localStorage.setItem("userId", response.data.userId);
-      localStorage.setItem("name", response.data.name);
-      navigate("/dashboard");
+      alert(response.data.message);
+      navigate("/signup");
     } catch (err) {
       console.error(err);
     }

@@ -24,7 +24,7 @@ const Navber = () => {
 
   return (
     <ul className="nav justify-content-evenly align-items-center sticky-top  py-3 my_nav">
-      <Link to="/">
+      <Link to="/home">
         <img src={logo} alt="company_logo" style={{ width: "100px" }} />
       </Link>
 
