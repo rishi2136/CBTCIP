@@ -24,24 +24,24 @@ const Navber = () => {
 
   return (
     <ul className="nav justify-content-evenly align-items-center sticky-top  py-3 my_nav">
-      <Link to="/">
+      <Link to="/event/home">
         <img src={logo} alt="company_logo" style={{ width: "100px" }} />
       </Link>
 
       {!isLogIn && (
         <>
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/event/home">
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/signup">
+            <Link className="nav-link" to="/event/user/signup">
               SignUp
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/login">
+            <Link className="nav-link" to="/event/user/login">
               Login
             </Link>
           </li>
@@ -51,7 +51,7 @@ const Navber = () => {
       {isLogIn && (
         <>
           <li className="nav-item">
-            <Link className="nav-link" to={"/dashboard"}>
+            <Link className="nav-link" to={"/event/dashboard"}>
               Dashboard
             </Link>
           </li>

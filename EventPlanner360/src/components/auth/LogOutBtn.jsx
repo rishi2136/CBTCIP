@@ -7,7 +7,7 @@ const LogOutBtn = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("userId");
     localStorage.removeItem("name");
-    navigate("/event");
+    navigate("/event/home");
   };
 
   return (

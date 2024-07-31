@@ -39,28 +39,28 @@ const router = createBrowserRouter([
     element: <Confirm />,
   },
   {
-    path: "/",
+    path: "/event",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/event",
+        path: "home",
         element: <Home />,
       },
       {
-        path: "/event/dashboard",
+        path: "dashboard",
         element: <DashBoard />,
       },
       {
-        path: "/event/view/:id",
+        path: "view/:id",
         element: <EventView />,
       },
       {
-        path: "/event/user/signup",
+        path: "user/signup",
         element: <SignUp />,
       },
       {
-        path: "/event/user/login",
+        path: "user/login",
         element: <LogIn />,
       },
     ],
