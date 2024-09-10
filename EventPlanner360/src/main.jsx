@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from "react-router-dom";
 import LogIn from "./components/auth/LogIn.jsx";
 import SignUp from "./components/auth/SignUp.jsx";
 import CheckoutForm from "./components/payment/CheckoutForm.jsx";
@@ -70,7 +74,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <createHashRouter router={router} />
     </Provider>
   </React.StrictMode>
 );
