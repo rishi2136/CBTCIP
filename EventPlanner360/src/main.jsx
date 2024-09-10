@@ -19,26 +19,6 @@ import store from "./store/index.js";
 
 const router = createBrowserRouter([
   {
-    path: "/guest/redirect",
-    element: <GuestsRedirect />,
-  },
-  {
-    path: "/checkout",
-    element: <CheckoutForm />,
-  },
-  {
-    path: "/return",
-    element: <PaymentSuccess />,
-  },
-  {
-    path: "/congrats",
-    element: <Congrats />,
-  },
-  {
-    path: "/confirm",
-    element: <Confirm />,
-  },
-  {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
@@ -62,6 +42,26 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <LogIn />,
+      },
+      {
+        path: "guest/redirect",
+        element: <GuestsRedirect />,
+      },
+      {
+        path: "checkout",
+        element: <CheckoutForm />,
+      },
+      {
+        path: "return",
+        element: <PaymentSuccess />,
+      },
+      {
+        path: "congrats",
+        element: <Congrats />,
+      },
+      {
+        path: "confirm",
+        element: <Confirm />,
       },
     ],
   },
