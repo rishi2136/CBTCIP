@@ -21,7 +21,7 @@ import EventView from "./pages/EventView.jsx";
 import Home from "./pages/Home.jsx";
 import store from "./store/index.js";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <createHashRouter router={router} />
+      <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
 );
